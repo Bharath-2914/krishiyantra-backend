@@ -14,3 +14,7 @@ def get_equipment():
         {"id": 3, "name": "Sprayer", "price_per_day": 500, "location": "Gudivada"},
     ]
     return equipment_list
+
+@app.get("/about")
+def about():
+    return {"app": "KrishiYantra", "version": "1.0", "developer": "Bharadwaj"}
